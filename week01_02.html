@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .wrap{
+            width: 600px;
+            margin: 100px auto;
+        }
+        .candleimage {
+            background-image: url("https://t1.daumcdn.net/cfile/tistory/997E2C395B988B3619");
+            width: 600px;
+            height: 250px;
+            background-position: center;
+            background-size: cover;
+            padding: 50px;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        .explain {
+            text-align: left;
+        }
+        .databox {
+        }
+        .order {
+            text-align: center;
+        }
+    </style>
+    <script>
+            function order() {
+                  alert('주문이 완료되었습니다.');
+            }
+            </script>
+    <meta charset="UTF-8">
+    <title>week01homework02</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="candleimage"></div>
+    <div class="explain">
+        <div class="row row-cols-3">
+            <h1 class="col">상품제목</h1>
+            <h5 class="col-6 align-self-center">가격: 1,000,000원 / 개</h5>
+        </div>
+        <p>
+            이 상품으로 말할 것 같으면 용왕이 찾지못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지 삼형제의 숨결이 고루 녹아 있는 먹으면 120세까지 살 수 있다는 이 상품으로 말할 것 같으면
+            용왕이
+            찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지..
+        </p>
+    </div>
+    <div class="databox">
+        <h1>주문하기</h1>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주문자 성함</span>
+            </div>
+            <input type="text" class="form-control" placeholder="ex:홍길동" aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>수량을 입력하세요.</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주소</span>
+            </div>
+            <input type="text" class="form-control" placeholder="도로명주소를 입력해주세요." aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">전화번호</span>
+            </div>
+            <input type="text" class="form-control" placeholder="ex:010-0000-0000" aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="order">
+        <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+    </div>
+</div>
+</body>
+</html>
